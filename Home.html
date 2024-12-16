@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio ni Batoi</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="icon" href="Logo Cn.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Aonik+Pro:wght@700&display=swap" rel="stylesheet">
+    <script src="script.js" defer ></script>
+    <link rel="icon" type="image/x-icon" href="bognot.png" />
+
+</head>
+<body>
+    <div class="topnav">
+        <a href="#home" class="active" onclick="setActive(this); scrollToTop()">Home</a>
+        <a href="#hobby" onclick="setActive(this)">Hobbies</a>
+        <a href="#educ" onclick="setActive(this)">Education</a>
+        <a href="#about" onclick="setActive(this)">About Me</a>
+        <a href="#picture" onclick="setActive(this)">Pictures</a>
+    </div>
+
+    <!-- Home Section -->
+    <div class="container" id="home">
+        <div class="picture hidden">
+            <img src="picko-modified.png" class="ture">
+        </div>
+        <div class="home hidden">
+            <h1 class="des1">Hello!</h1>
+            <p class="des2">My name is Alwynn Y. Rafon. I'm 21 years old and a student at Camarines Norte State College.</p>
+            <a href="https://m.me/bogartgobrrt" target="_blank">
+                <button class="linkk">Message Me</button>
+            </a>
+        </div>
+    </div>
+
+    <hr class="linee">
+
+    <!-- Hobby Section -->
+    <div class="hobby hidden" id="hobby">
+        <section>
+            <h1 class="des3">Hobbies</h1>
+            <p class="des4">I have a few hobbies that I really enjoy. I love playing games on my phone, especially *Genshin Impact*. Cooking is another thing I’m passionate about, I enjoy experimenting with different ingredients and making delicious meals. In my downtime, I also love reading mangas and watching anime. Playing table tennis can be sometimes a good past time for me. </p>
+        </section>
+        <div class="tabol">
+            <img src="table.jpg" class="table">
+        </div>
+    </div>
+
+    <!-- Education Section -->
+    <div class="education hidden" id="educ">
+        <div class="educ">
+            <img src="grad.jpg" class="educk">
+        </div>
+        <section>
+            <h1 class="des5">Education</h1>
+            <p class="des6">I began my educational journey at Daet Elementary School, where I laid the foundation for my academic path. After completing elementary school, I moved on to Froilan Lopez High School, where I spent my high school years. What made this experience special was that my father taught there, which added a personal connection to my studies and the school community.
+                          Currently, I am pursuing a Bachelor of Science in Information Technology (BSIT) at Camarines Norte State College. This step in my education is helping me build the technical skills and knowledge I need for a career in the ever-evolving field of technology. I'm excited about what the future holds and the opportunities to apply what I learn to real-world challenges.</p>
+        </section>
+    </div>
+
+    <!-- About Me Section -->
+    <div class="about-me hidden" id="about">
+        <div class="fampic">
+                <img src="famm.jpg" class="fampc">
+        </div>
+        <section>
+            <h1 class="des7">About Me</h1>
+            <p class="des8">I’m 21 years old, and I live in Daet, Camarines Norte, a place I’ve called home all my life. I’m the youngest of three siblings, which has always been a unique and fun experience—I’ve learned so much from my older siblings while still carving out my own path.  
+
+                I absolutely love food, especially Filipino dishes like sinigang, kare-kare, and bulalo. These meals not only taste amazing but also bring back warm memories of family gatherings and special moments.  
+                
+                I’m also a dog lover and take care of two adorable dogs. Onion, my Shih Tzu, has such a playful and charming personality, while Bugnot, my feisty little Chihuahua, is always full of energy. They bring so much joy to my daily life and are like family to me.  
+                
+                Overall, I’m someone who values family, enjoys life’s simple pleasures, and cherishes the bond I share with my pets and loved ones.</p>
+        </section>
+    </div>
+    <!--Pictures-->
+    <div class="pics hidden" id="picture">
+        <h1 class="cip">Pictures</h1>
+        <div class="image-grid">
+            <img src="1.jpg" alt="Image 1">
+            <img src="4.jpg" alt="Image 4">
+            <img src="3.jpg" alt="Image 3">
+            <img src="2.jpg" alt="Image 2">
+            <img src="7.jpg" alt="Image 7">
+            <img src="6.jpg" alt="Image 6">
+            <img src="5.jpg" alt="Image 5">
+            <img src="8.jpg" alt="Image 8">
+            <img src="9.jpg" alt="Image 9">
+            <img src="10.jpg" alt="Image 10">
+            <img src="15.jpg" alt="Image 15">
+            <img src="12.jpg" alt="Image 12">
+            <img src="13.jpg" alt="Image 13">
+            <img src="14.jpg" alt="Image 14">
+            <img src="11.jpg" alt="Image 11">
+        </div>
+        <div>
+            <hr class="linee2">
+        </div>
+        <!-- Last Part-->    
+        <div class="links">
+            <img src="fb.png" class="fb" onclick="window.open('https://www.facebook.com/bogartgobrrt/', '_blank')" style="cursor: pointer;">
+            <img src="tele.png" alt="tele" onclick="window.open('https://t.me/bogartgobrrt', '_blank')" style="cursor: pointer; width: 50px; height: auto;">
+        </div>
+    </div>
+</body>
+</html>

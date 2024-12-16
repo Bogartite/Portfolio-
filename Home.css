@@ -1,0 +1,359 @@
+body {
+    margin-top: 0;
+    font-family: 'Aonik Pro', Arial, sans-serif;
+    overflow-x: hidden;
+    background-color: black;
+}
+html { 
+    scroll-behavior: smooth; 
+    
+} 
+
+/* Centered Navigation with Search Bar */
+.topnav {
+    position: fixed; /* Fix the navbar to the top */
+    left: 50%; /* Center the navbar horizontally */
+    transform: translateX(-50%); /* Offset by 50% of its own width to center it */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; /* Evenly space out the navbar items */
+    z-index: 9999;
+    background-color: #141414; /* Black background for the navbar */
+    padding: 5px; /* Padding for spacing */
+    width: 100%; /* Full width of the screen */
+    height: 12%; /* Height of the navbar */
+    box-sizing: border-box; /* Ensure padding is included within the height/width */
+}
+
+/* Navbar link styles */
+.topnav a {
+    text-decoration: none;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+    white-space: nowrap;
+}
+
+
+/* Active link style */
+.topnav a.active {
+    background-color: black; /* Active link background */
+    color: #fff; /* Active link text color */
+    border: 1px solid white; /* White border of 1px */
+    box-sizing: border-box; /* Ensure padding is included within the height/width */
+}
+
+/* Hover effect for navbar links */
+.topnav a:hover {
+    background-color: #ddd; /* Hover effect background */
+    color: #000; /* Hover effect text color */
+}
+
+.container {
+    display: flex; /* Aligns the items horizontally */
+    align-items: center; /* Vertically aligns the items */
+    margin-bottom: 80px;
+}
+
+.ture{
+    padding-top: 40%;
+    padding-left: 50%;
+    height: 400px;
+    width: auto;
+}
+
+.home {
+    margin-top: 2%;
+    margin-left: 20%; /* Adds space between the image and the description */
+    max-width: 550px; /* Restricts the description width */
+}
+
+
+.des1 {
+    color: wheat;
+    font-size: 90px; /* Adjust font size as needed */
+}
+
+.des2 {
+    font-size: 30px;
+    color: wheat;
+    margin-top: 0px;
+    text-align: justify;
+    text-justify: inter-word;
+    
+}
+
+.linkk {
+    background-color: black; /* Button color */
+    color: white; /* Text color */
+    border: 1px solid; /* Remove default border */
+    padding: 12px 24px; /* Add padding around the text */
+    font-size: 16px; /* Text size */
+    cursor: pointer; /* Pointer cursor when hovering */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the button */
+.linkk:hover {
+    background-color: #ddd; /* Darker button color on hover */
+    color: black;
+}
+
+/* Style for the link to ensure the button remains clickable */
+a {
+    text-decoration: none; /* Remove underline */
+}
+
+
+.linee{
+    margin-bottom: 10px;
+    width: 95%;
+}
+
+
+.hobby {
+    margin: 0 auto 50px auto; /* Add spacing below the section */
+    color: wheat;
+    text-align: center;
+    max-width: 60%; /* Constrain width to make it visually balanced */
+    padding-bottom: 10px;
+    padding-top: 130px;
+    
+}
+
+.table{
+    width: 800px;
+    height: auto;
+}
+
+.des3 {
+    font-size: 30px;
+    
+}
+
+.des4 {
+    font-size: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+    
+}
+
+.education {
+    margin: 0 auto 50px auto; /* Add spacing below the section */
+    color: wheat;
+    text-align: center;
+    max-width: 60%;
+    padding-bottom: 10px;
+    padding-top: 130px;
+
+}
+
+.educk {
+    float: right;
+    margin-right: 10px;
+    height: 300px;
+    width: auto;
+    margin-top: 85px;
+    margin-left: 20px;
+}
+
+.des5 {
+    font-size: 30px;
+}
+
+.des6 {
+    font-size: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.about-me {
+    margin: 0 auto 50px auto; /* Add spacing below the section */
+    color: wheat;
+    text-align: center;
+    max-width: 60%;
+    padding-bottom: 90px;
+    padding-top: 130px;
+
+}
+
+.fampc {
+    float: left;
+    margin-right: 20px;
+    height: 400px;
+    width: auto;
+    margin-top: 70px;
+}
+
+
+.des7 {
+    font-size: 30px;
+}
+
+.des8 {
+    font-size: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* Hide sections initially */
+.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 0.8s ease-out;
+}
+
+/* Reveal animation */
+.revealed {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.linee2{
+    margin-bottom: 10px;
+    width: 95%;
+}
+
+
+.links {
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically (optional) */
+}
+
+.fb, .tele {
+    margin: 0 30px; /* Adds some space between the images */
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Keeps the aspect ratio */
+}
+
+.pics{
+    color: white;
+}
+
+.cip{
+    margin: 0 auto 50px auto; /* Add spacing below the section */
+    color: wheat;
+    text-align: center;
+    padding-top: 130px;
+
+}
+
+.image-grid {
+    padding-left: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+    grid-template-rows: repeat(5, auto); /* 5 rows with automatic height based on content */
+    gap: 10px; /* space between the images */
+    align-items: center;
+    margin-bottom: 20px;
+}
+.image-grid img {
+    width: 90%; /* Ensure the images take full width of their grid cell */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+}
+
+/* Responsive styles for mobile devices */
+@media screen and (max-width: 768px) {
+    body {
+        margin-top: 0;
+        font-size: 14px; /* Reduce font size for smaller screens */
+        overflow-x: hidden;
+    }
+
+    .topnav {
+        flex-direction:row; /* Stack navbar items vertically */
+        height: auto; /* Adjust height to fit content */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .topnav a {
+        padding: 10px 20px; /* Reduce padding for links */
+        font-size: 14px; /* Smaller font size for navbar items */
+    }
+
+    .container {
+        flex-direction: row; /* Stack content vertically */
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .ture {
+        padding-top: 20%; /* Adjust padding for images */
+        padding-left:60px;
+        width: 60%; /* Make images fit smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .home {
+        margin-left: 0; /* Center-align the content */
+        max-width: 40%; /* Constrain width for smaller screens */
+        margin-top: 50px;
+    }
+
+    .des1 {
+        font-size: 50px; /* Reduce font size */
+    }
+
+    .des2 {
+        font-size: 18px; /* Adjust text size */
+    }
+
+    .hobby, .education, .about-me, .cip {
+        max-width: 90%; /* Constrain width for sections */
+        padding-top: 80px; /* Adjust padding for smaller screens */
+    }
+
+    .table{
+        width: 400px;
+    }
+
+
+
+    .educk {
+        float: left; /* Disable floating */
+        width: 30%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .fampc{
+        float: left; /* Disable floating */
+        width: 30%; /* Make images responsive */
+        height: auto; /
+    }
+
+    .linkk {
+        font-size: 14px; /* Reduce button size */
+        padding: 8px 16px; /* Adjust padding for buttons */
+    }
+
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr); /* Show 2 columns */
+        gap: 5px; /* Reduce spacing between grid items */
+        padding-left: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .image-grid img {
+        width: 100%; /* Fit images to grid cell */
+    }
+
+    .links {
+        flex-direction: row; /* Stack social icons vertically */
+        gap: 20px;
+    }
+
+    .fb {
+        margin: 10px 0; /* Add spacing for icons */
+        width: 40px;
+        height: auto; /* Adjust icon size */
+    }
+
+    .tele{
+        margin: 10px 0; /* Add spacing for icons */
+        width: 1px;
+        height: auto; / 
+    }
+}
