@@ -9,20 +9,19 @@ html {
     
 } 
 
-/* Centered Navigation with Search Bar */
 .topnav {
-    position: fixed; /* Fix the navbar to the top */
-    left: 50%; /* Center the navbar horizontally */
-    transform: translateX(-50%); /* Offset by 50% of its own width to center it */
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     align-items: center;
-    justify-content: space-evenly; /* Evenly space out the navbar items */
+    justify-content: space-evenly; 
     z-index: 9999;
-    background-color: #141414; /* Black background for the navbar */
-    padding: 5px; /* Padding for spacing */
-    width: 100%; /* Full width of the screen */
-    height: 12%; /* Height of the navbar */
-    box-sizing: border-box; /* Ensure padding is included within the height/width */
+    background-color: #141414; 
+    padding: 5px; 
+    width: 100%;
+    height: 12%; 
+    box-sizing: border-box;
 }
 
 /* Navbar link styles */
@@ -38,21 +37,21 @@ html {
 
 /* Active link style */
 .topnav a.active {
-    background-color: black; /* Active link background */
-    color: #fff; /* Active link text color */
-    border: 1px solid white; /* White border of 1px */
-    box-sizing: border-box; /* Ensure padding is included within the height/width */
+    background-color: black; 
+    color: #fff; 
+    border: 1px solid white;
+    box-sizing: border-box; 
 }
 
 /* Hover effect for navbar links */
 .topnav a:hover {
-    background-color: #ddd; /* Hover effect background */
-    color: #000; /* Hover effect text color */
+    background-color: #ddd; 
+    color: #000; 
 }
 
 .container {
-    display: flex; /* Aligns the items horizontally */
-    align-items: center; /* Vertically aligns the items */
+    display: flex; 
+    align-items: center; 
     margin-bottom: 80px;
 }
 
@@ -65,14 +64,14 @@ html {
 
 .home {
     margin-top: 2%;
-    margin-left: 20%; /* Adds space between the image and the description */
-    max-width: 550px; /* Restricts the description width */
+    margin-left: 20%; 
+    max-width: 550px; 
 }
 
 
 .des1 {
     color: wheat;
-    font-size: 90px; /* Adjust font size as needed */
+    font-size: 90px; 
 }
 
 .des2 {
@@ -85,25 +84,24 @@ html {
 }
 
 .linkk {
-    background-color: black; /* Button color */
-    color: white; /* Text color */
-    border: 1px solid; /* Remove default border */
-    padding: 12px 24px; /* Add padding around the text */
-    font-size: 16px; /* Text size */
-    cursor: pointer; /* Pointer cursor when hovering */
-    border-radius: 8px; /* Rounded corners */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    background-color: black; 
+    color: white;
+    border: 1px solid; 
+    padding: 12px 24px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border-radius: 8px; 
+    transition: background-color 0.3s ease; 
 }
 
 /* Hover effect for the button */
 .linkk:hover {
-    background-color: #ddd; /* Darker button color on hover */
+    background-color: #ddd;
     color: black;
 }
 
-/* Style for the link to ensure the button remains clickable */
 a {
-    text-decoration: none; /* Remove underline */
+    text-decoration: none;
 }
 
 
@@ -114,10 +112,10 @@ a {
 
 
 .hobby {
-    margin: 0 auto 50px auto; /* Add spacing below the section */
+    margin: 0 auto 50px auto; 
     color: wheat;
     text-align: center;
-    max-width: 60%; /* Constrain width to make it visually balanced */
+    max-width: 60%; 
     padding-bottom: 10px;
     padding-top: 130px;
     
@@ -141,7 +139,7 @@ a {
 }
 
 .education {
-    margin: 0 auto 50px auto; /* Add spacing below the section */
+    margin: 0 auto 50px auto;
     color: wheat;
     text-align: center;
     max-width: 60%;
@@ -170,7 +168,7 @@ a {
 }
 
 .about-me {
-    margin: 0 auto 50px auto; /* Add spacing below the section */
+    margin: 0 auto 50px auto;
     color: wheat;
     text-align: center;
     max-width: 60%;
@@ -198,14 +196,12 @@ a {
     text-justify: inter-word;
 }
 
-/* Hide sections initially */
 .hidden {
     opacity: 0;
     transform: translateX(-100%);
     transition: all 0.8s ease-out;
 }
 
-/* Reveal animation */
 .revealed {
     opacity: 1;
     transform: translateX(0);
@@ -218,15 +214,15 @@ a {
 
 
 .links {
-    display: flex; /* Enables flexbox */
-    justify-content: center; /* Centers items horizontally */
-    align-items: center; /* Centers items vertically (optional) */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
 }
 
 .fb, .tele {
-    margin: 0 30px; /* Adds some space between the images */
-    width: 50px; /* Adjust the width as needed */
-    height: auto; /* Keeps the aspect ratio */
+    margin: 0 30px; 
+    width: 50px; 
+    height: auto;
 }
 
 .pics{
@@ -234,7 +230,7 @@ a {
 }
 
 .cip{
-    margin: 0 auto 50px auto; /* Add spacing below the section */
+    margin: 0 auto 50px auto; 
     color: wheat;
     text-align: center;
     padding-top: 130px;
@@ -244,67 +240,66 @@ a {
 .image-grid {
     padding-left: 30px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
-    grid-template-rows: repeat(5, auto); /* 5 rows with automatic height based on content */
-    gap: 10px; /* space between the images */
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(5, auto);
+    gap: 10px;
     align-items: center;
     margin-bottom: 20px;
 }
 .image-grid img {
-    width: 90%; /* Ensure the images take full width of their grid cell */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Optional: Adds rounded corners */
+    width: 90%; 
+    height: auto;
+    border-radius: 8px; 
 }
 
-/* Responsive styles for mobile devices */
 @media screen and (max-width: 768px) {
     body {
         margin-top: 0;
-        font-size: 14px; /* Reduce font size for smaller screens */
+        font-size: 14px;
         overflow-x: hidden;
     }
 
     .topnav {
-        flex-direction:row; /* Stack navbar items vertically */
-        height: auto; /* Adjust height to fit content */
-        padding: 10px; /* Adjust padding for smaller screens */
+        flex-direction:row;
+        height: auto; 
+        padding: 10px; 
     }
 
     .topnav a {
-        padding: 10px 20px; /* Reduce padding for links */
-        font-size: 14px; /* Smaller font size for navbar items */
+        padding: 10px 20px;
+        font-size: 14px; 
     }
 
     .container {
-        flex-direction: row; /* Stack content vertically */
+        flex-direction: row;
         align-items: center;
         margin-bottom: 40px;
     }
 
     .ture {
-        padding-top: 20%; /* Adjust padding for images */
+        padding-top: 20%; 
         padding-left:60px;
-        width: 60%; /* Make images fit smaller screens */
-        height: auto; /* Maintain aspect ratio */
+        width: 60%; 
+        height: auto;
     }
 
     .home {
-        margin-left: 0; /* Center-align the content */
-        max-width: 40%; /* Constrain width for smaller screens */
+        margin-left: 0; 
+        max-width: 40%; 
         margin-top: 50px;
     }
 
     .des1 {
-        font-size: 50px; /* Reduce font size */
+        font-size: 50px; 
     }
 
     .des2 {
-        font-size: 18px; /* Adjust text size */
+        font-size: 18px; 
     }
 
     .hobby, .education, .about-me, .cip {
-        max-width: 90%; /* Constrain width for sections */
-        padding-top: 80px; /* Adjust padding for smaller screens */
+        max-width: 90%; 
+        padding-top: 80px; 
     }
 
     .table{
@@ -314,45 +309,45 @@ a {
 
 
     .educk {
-        float: left; /* Disable floating */
-        width: 30%; /* Make images responsive */
-        height: auto; /* Maintain aspect ratio */
+        float: left;
+        width: 30%; 
+        height: auto;
     }
 
     .fampc{
-        float: left; /* Disable floating */
-        width: 30%; /* Make images responsive */
-        height: auto; /
+        float: left; 
+        width: 30%; 
+        height: auto; 
     }
 
     .linkk {
-        font-size: 14px; /* Reduce button size */
-        padding: 8px 16px; /* Adjust padding for buttons */
+        font-size: 14px; 
+        padding: 8px 16px; 
     }
 
     .image-grid {
-        grid-template-columns: repeat(2, 1fr); /* Show 2 columns */
-        gap: 5px; /* Reduce spacing between grid items */
-        padding-left: 10px; /* Adjust padding for smaller screens */
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 5px; 
+        padding-left: 10px; 
     }
 
     .image-grid img {
-        width: 100%; /* Fit images to grid cell */
+        width: 100%; 
     }
 
     .links {
-        flex-direction: row; /* Stack social icons vertically */
+        flex-direction: row;
         gap: 20px;
     }
 
     .fb {
-        margin: 10px 0; /* Add spacing for icons */
+        margin: 10px 0;
         width: 40px;
-        height: auto; /* Adjust icon size */
+        height: auto; 
     }
 
     .tele{
-        margin: 10px 0; /* Add spacing for icons */
+        margin: 10px 0; 
         width: 1px;
         height: auto; / 
     }
